@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jgw.gpstrace.ScanActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请扫码..."
+            android:textSize="30sp" />
+
+
+        <cn.finalteam.loadingviewfinal.RecyclerViewFinal
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="beforeDescendants"
+            app:loadMoreMode="click|scroll"
+            app:loadMoreView="cn.finalteam.loadingviewfinal.DefaultLoadMoreView"
+            app:noLoadMoreHideView="false" />
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/btn_common"
+            android:background="@drawable/selector_btn_common"
+            android:text="确定" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_saved"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="保存成功！"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+</LinearLayout>

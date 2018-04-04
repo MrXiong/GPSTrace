@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <cn.finalteam.loadingviewfinal.RecyclerViewFinal
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="beforeDescendants"
+        app:loadMoreMode="click|scroll"
+        app:loadMoreView="cn.finalteam.loadingviewfinal.DefaultLoadMoreView"
+        app:noLoadMoreHideView="false" />
+
+</merge>

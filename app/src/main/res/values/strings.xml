@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">海上项目</string>
+
+    <!-- VipRegisterActivity -->
+    <string name="vip_register_label">新建会员</string>
+    <string name="vip_register_success">恭喜你,会员注册成功！</string>
+    <string name="intergralcode">积分码：</string>
+    <string name="intergralphone">手机号：</string>
+    <string name="intergralbutton">积分</string>
+    <string name="register_phone">手机号&#160;&#160;&#160;&#160;</string>
+    <string name="register_manager">负责人&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="register_province">省市区&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="register_phone_hint">请输入手机号</string>
+    <string name="register_phone_check">手机号格式不正确</string>
+    <string name="register_email_check">邮箱格式不正确</string>
+    <string name="register_address">地址&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="register_address_store">地址&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="register_address_text">请选择省市区</string>
+    <string name="register_name">姓名&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="register_name_hint">请填写您的姓名</string>
+    <string name="register_birthday">生日&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="register_mobile">座机&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="register_mobile_store">座机&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="register_birthday_text">请选择您的生日</string>
+    <string name="register_email">邮箱&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="register_email_hint">请填写您的邮箱</string>
+    <string name="register_remarks">备注信息</string>
+    <string name="register_remarks_store">备注信息&#160;&#160;&#160;&#160;</string>
+    <string name="register_remarks_hint">请输入备注信息</string>
+    <string name="register_btn">注册</string>
+</resources>
