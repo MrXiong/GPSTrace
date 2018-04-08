@@ -3,6 +3,7 @@ package com.jgw.gpstrace.bean;
 import org.litepal.crud.DataSupport;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,7 +16,7 @@ public class Code  extends DataSupport implements  Serializable {
     private int id;
     private String code;
     private String nodeName;
-    private List<Message> messageList;
+    private List<Message> messageList = new ArrayList<>();
 
     //位置
     private double latitude;

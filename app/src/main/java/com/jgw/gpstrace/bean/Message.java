@@ -3,6 +3,8 @@ package com.jgw.gpstrace.bean;
 import org.litepal.crud.DataSupport;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by user on 2018/4/3.
@@ -14,6 +16,15 @@ public class Message extends DataSupport implements Serializable {
     private String key;
     private String valueHint;
     private String value;
+    private List<Code> codeList = new ArrayList<>();
+
+    public List<Code> getCodeList() {
+        return codeList;
+    }
+
+    public void setCodeList(List<Code> codeList) {
+        this.codeList = codeList;
+    }
 
     public String getValueHint() {
         return valueHint;

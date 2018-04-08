@@ -27,6 +27,7 @@ import butterknife.OnClick;
 import cn.finalteam.loadingviewfinal.RecyclerViewFinal;
 
 import static com.jgw.gpstrace.bean.Message.VALUE_LIST;
+import static org.litepal.crud.DataSupport.saveAll;
 
 public class ScanActivity extends BaseScanActivity {
 
@@ -40,6 +41,7 @@ public class ScanActivity extends BaseScanActivity {
     TextView tvSaved;
     private CommonAdapter mCommonAdapter;
     private List<String> mCodeList = new ArrayList<>();
+    private List<Code> mCodeBeanList = new ArrayList<>();
     private List<Message> valueList = new ArrayList<>();
     private Node node;
 
@@ -100,13 +102,11 @@ public class ScanActivity extends BaseScanActivity {
         //保存
 
 
+
         new Thread(new Runnable() {
             @Override
             public void run() {
                 for (int i = 0; i < mCodeList.size(); i++) {
-
-                    DataSupport.saveAll(valueList);
-
                     Code code = new Code();
                     code.setMessageList(valueList);
                     code.setCode(mCodeList.get(i));
@@ -114,7 +114,14 @@ public class ScanActivity extends BaseScanActivity {
                     code.setLatitude(node.getLatitude());
                     code.setLongitude(node.getLongitude());
                     code.save();
+                    mCodeBeanList.add(code);
+                }
 
+
+                for (int j = 0; j < valueList.size(); j++) {
+                    Message message = valueList.get(j);
+                    message.setCodeList(mCodeBeanList);
+                    message.save();
                 }
 
                 runOnUiThread(new Runnable() {
